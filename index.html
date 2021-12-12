@@ -30,10 +30,11 @@
             </div> <!--Fim de SOBRENOME-->
         </fieldset>
 
+         <!--Início do E-mail-->
         <div>
             <label>E-mail</label>
             <input id="email" type="email" name="email">
-        </div>
+        </div> <!--Fim do E-mail-->
 
         <!--Início de escolha de areas-->
         <div>
@@ -53,12 +54,41 @@
         <div>
             <label>Sênioridade</label>
             <select id="senioridade">
-                <option>Selecione a opção</option>
+                <option selected disabled value="">Selecione a opção</option>
                 <option>Junior</option>
                 <option>Pleno</option>
                 <option>Sênior</option>
             </select>
-        </div>
+        </div> <!--Fim de escolha de areas, Senior, Junior ou Pleno-->
+
+        <fieldset>
+            <div>
+                <label>Selecione as tecnologias que você utiliza</label><br><br>
+                <label>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="html">HTML
+                </label>
+                <label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="css">CSS
+                </label>
+                <label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="js">JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="c">C
+                </label>
+                <label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="c#">C#
+                </label>
+                <label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="python">Python
+                </label>
+                <label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="java">JAVA
+                </label>
+            </div>
+        </fieldset>
+
+
     </form>
     
 </body>
