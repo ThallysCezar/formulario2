@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta rel="stylescheet" type="text;css" href="Css/style.css">
     <title>Formulário</title>
 </head>
 
@@ -16,11 +17,42 @@
 
     <form>
         <fieldset>
+            <!--Início de NOME-->
             <div>
                 <label>Nome</label>
-                <input>
-            </div>
+                <input id="nome" type="text" name="nome">
+            </div> <!--Fim de NOME-->
+
+            <!--Início de SOBRENOME-->
+            <div>
+                <label>Nome</label>
+                <input id="sobrenome" type="text" name="sobrenome">
+            </div> <!--Fim de SOBRENOME-->
         </fieldset>
+
+        <div>
+            <label>E-mail</label>
+            <input id="email" type="email" name="email">
+        </div>
+
+        <!--Início de escolha de areas-->
+        <div>
+            <label>De qual lado da aplicação você desenvolve?</label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-End
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-End
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div> <!--Fim de escolha de areas-->
+
+        <!--Início de escolha de areas, Senior, Junior ou Pleno-->
+        <div>
+            <label></label>
+        </div>
     </form>
     
 </body>
