@@ -10,34 +10,34 @@
 
 <body> 
     
-    <div>
-        <h1>Cadastros de Devs</h1>
-        <p>Complete suas informações</p><br/>
+    <div class="campo">
+        <h1 id="titulo">Cadastros de Devs</h1>
+        <p id="subtitulo">Complete suas informações</p><br/>
     </div>
 
     <form>
-        <fieldset>
+        <fieldset class="grupo">
             <!--Início de NOME-->
             <div>
-                <label>Nome</label>
-                <input id="nome" type="text" name="nome">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" name="nome" required>
             </div> <!--Fim de NOME-->
 
             <!--Início de SOBRENOME-->
-            <div>
-                <label>Nome</label>
-                <input id="sobrenome" type="text" name="sobrenome">
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input id="sobrenome" type="text" name="sobrenome" required>
             </div> <!--Fim de SOBRENOME-->
         </fieldset>
 
          <!--Início do E-mail-->
-        <div>
-            <label>E-mail</label>
+        <div class="campo">
+            <label for="email">E-mail</label>
             <input id="email" type="email" name="email">
         </div> <!--Fim do E-mail-->
 
         <!--Início de escolha de areas-->
-        <div>
+        <div class="campo">
             <label>De qual lado da aplicação você desenvolve?</label>
             <label>
                 <input type="radio" name="devweb" value="frontend" checked>Front-End
@@ -48,10 +48,10 @@
             <label>
                 <input type="radio" name="devweb" value="fullstack">Fullstack
             </label>
-        </div> <!--Fim de escolha de areas-->
+        </div class="campo"> <!--Fim de escolha de areas-->
 
         <!--Início de escolha de areas, Senior, Junior ou Pleno-->
-        <div>
+        <div class="campo">
             <label>Sênioridade</label>
             <select id="senioridade">
                 <option selected disabled value="">Selecione a opção</option>
@@ -62,8 +62,8 @@
         </div> <!--Fim de escolha de areas, Senior, Junior ou Pleno-->
 
         <!--Início de escolha de Tecnologias-->
-        <fieldset>
-            <div>
+        <fieldset class="grupo">
+            <div class="campo">
                 <label>Selecione as tecnologias que você utiliza</label><br><br>
                 <label>
                     <input type="checkbox" id="tecnologia1" name="tecnologia1" value="html">HTML
@@ -90,7 +90,7 @@
         </fieldset>
 
         <!--Início de area de escrever-->
-        <div>
+        <div class="campo">
             <br>
             <label>Conte um pouco da sua experiência</label>
             <textarea rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
