@@ -19,26 +19,26 @@
         <fieldset class="grupo">
             <!--Início de NOME-->
             <div>
-                <label for="nome">Nome</label>
+                <label for="nome"><strong>Nome</strong></label>
                 <input id="nome" type="text" name="nome" required>
             </div> <!--Fim de NOME-->
 
             <!--Início de SOBRENOME-->
             <div class="campo">
-                <label for="sobrenome">Sobrenome</label>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
                 <input id="sobrenome" type="text" name="sobrenome" required>
             </div> <!--Fim de SOBRENOME-->
         </fieldset>
 
          <!--Início do E-mail-->
         <div class="campo">
-            <label for="email">E-mail</label>
-            <input id="email" type="email" name="email">
+            <label for="email"><strong>E-mail</strong></label>
+            <input id="email" type="email" name="email" required>
         </div> <!--Fim do E-mail-->
 
         <!--Início de escolha de areas-->
         <div class="campo">
-            <label>De qual lado da aplicação você desenvolve?</label>
+            <label><strong>De qual lado da aplicação você desenvolve:</strong></label>
             <label>
                 <input type="radio" name="devweb" value="frontend" checked>Front-End
             </label>
@@ -52,7 +52,7 @@
 
         <!--Início de escolha de areas, Senior, Junior ou Pleno-->
         <div class="campo">
-            <label>Sênioridade</label>
+            <label for="senioridade">Sênioridade</label>
             <select id="senioridade">
                 <option selected disabled value="">Selecione a opção</option>
                 <option>Junior</option>
@@ -64,7 +64,7 @@
         <!--Início de escolha de Tecnologias-->
         <fieldset class="grupo">
             <div class="campo">
-                <label>Selecione as tecnologias que você utiliza</label><br><br>
+                <label><strong>Selecione as tecnologias que você utiliza</strong></label><br><br>
                 <label>
                     <input type="checkbox" id="tecnologia1" name="tecnologia1" value="html">HTML
                 </label>
@@ -92,11 +92,11 @@
         <!--Início de area de escrever-->
         <div class="campo">
             <br>
-            <label>Conte um pouco da sua experiência</label>
+            <label><strong>Conte um pouco da sua experiência</strong></label>
             <textarea rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
         </div> <!--Fim de area de escrever-->
         
-        <button type="submit">Concluído</button>
+        <button class="botao" type="submit">Concluído</button>
 
     </form>
     
